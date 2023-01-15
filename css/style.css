@@ -1,0 +1,116 @@
+:root {
+  --white-color: #f1f1f1;
+  --prime-color: #202124;
+  --gray-color: #555555;
+  --green-color: #14a099;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+span {
+  color: var(--green-color);
+  font-weight: 700;
+}
+/* Mobile Screen */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+/* iPad  Screen */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+/* laptop Screen */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+/* midem Screen */
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+/* Start Header */
+header {
+  height: 60px;
+}
+header .container {
+  border-bottom: 1px solid var(--prime-color);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+header .container h1 {
+  margin: 0;
+  font-size: 50px;
+  color: var(--prime-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header .container span {
+  color: var(--green-color);
+}
+/* End Header */
+/* Start About Me */
+.aboutMe .container {
+  border-bottom: 1px solid var(--prime-color);
+  padding: 15px 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutMe .container img {
+  width: 183px;
+  border-radius: 16px;
+}
+.aboutMe .container .textBox h1 {
+  margin: 0 0 5px 0;
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--prime-color);
+}
+.aboutMe .container .textBox p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--gray-color);
+}
+
+/* End About Me */
+/* Start My Life */
+.myLife .container {
+  border-bottom: 1px solid var(--prime-color);
+  padding: 15px 55px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.myLife .container h1 {
+  margin: 0 0 5px 0;
+  font-size: 50px;
+  font-weight: 600;
+}
+.myLife .container p {
+  font-size: 20px;
+  color: var(--gray-color);
+}
+/* End My Life */
