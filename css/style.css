@@ -290,8 +290,8 @@ nav .linksBox .iconsLinks ul li a {
 /* End Project */
 /* Start Footer */
 footer {
-  margin: 3em 0 0 0;
-  padding: 2em;
+  margin: 4em 0 0 0;
+  padding: 1em;
   border-top: 1px solid var(--prime-color);
 }
 footer .container {

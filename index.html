@@ -92,7 +92,7 @@
             <a href="#">murtada.ah2006@gmail.com</a>
             <a href="#">+9647713897889</a>
           </div>
-          <form action="#" method="post">
+          <form onsubmit="sendEmail(); reset(); return false;">
             <div class="input name">
               <label for="name">Name</label>
               <input type="text" name="name" id="name">
@@ -139,6 +139,20 @@
     </div>
   </Footer>
   <!-- End Footer -->
+  <SCript src="https://smtpjs.com/v3/smtp.js"></SCript>
+  <SCript>
+    function sendEmail() {
+      Email.send({
+        SecureToken: " f23d8832-463c-409a-83ae-87ffc276a963",
+        To: 'murtada.ah2006@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "لديك بريد جديد",
+        Body: "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </SCript>
 </body>
 
 </html>
