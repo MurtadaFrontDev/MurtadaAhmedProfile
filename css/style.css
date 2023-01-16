@@ -260,13 +260,17 @@ nav .linksBox .iconsLinks ul li a {
 @media (max-width: 450px) {
   .myProject .container .projects h1 {
     text-align: center;
+    font-size: 40px;
   }
-  .myProject .container .projects .cards {
+  .myProject .container .cards {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .myProject .container .project {
-    margin-bottom: 30px;
+  .myProject .container .cards .project {
+    margin: 20px auto;
+    text-align: center;
   }
   nav {
     position: relative;
