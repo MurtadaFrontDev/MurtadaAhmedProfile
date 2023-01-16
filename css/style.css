@@ -173,7 +173,7 @@ header .container span {
   display: flex;
 }
 .myProject .container .projects .cards .project {
-  margin-right: 3em;
+  margin: 0 3em 0 0;
 }
 nav {
   position: absolute;
@@ -271,8 +271,8 @@ nav .linksBox .iconsLinks ul li a {
     align-items: center;
     justify-content: center;
   }
-  .myProject .container .cards .project {
-    margin: 20px auto;
+  .myProject .container .projects .cards .project {
+    margin: 20px 0;
     text-align: center;
   }
   nav {
