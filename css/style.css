@@ -258,6 +258,9 @@ nav .linksBox .iconsLinks ul li a {
   color: var(--prime-color);
 }
 @media (max-width: 450px) {
+  .myProject .container {
+    padding: 15px 30px;
+  }
   .myProject .container .projects h1 {
     text-align: center;
     font-size: 40px;
