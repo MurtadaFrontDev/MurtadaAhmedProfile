@@ -23,7 +23,7 @@ span {
   margin: 0 auto;
   padding: 0 55px;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .container {
     width: 100%;
     padding: 15px 0;
@@ -51,7 +51,7 @@ header .container h1 {
 header .container span {
   color: var(--green-color);
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   header {
     height: 40px;
   }
@@ -87,7 +87,7 @@ header .container span {
   line-height: 27px;
   color: var(--gray-color);
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .aboutMe .container img {
     display: none;
   }
@@ -120,7 +120,7 @@ header .container span {
   font-size: 20px;
   color: var(--gray-color);
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .myLife .container {
     text-align: center;
     padding: 15px 30px;
