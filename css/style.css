@@ -153,6 +153,17 @@ header .container span {
   background: var(--grayWhite-color);
   width: 20em;
   height: 10em;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.myProject .img img {
+  width: 20em;
+  height: 10em;
+  transition: 0.3s;
+}
+.myProject .formValidation .img:hover img {
+  transform: scale(1.2);
 }
 .myProject .container .project h2 {
   font-size: 30px;
@@ -171,10 +182,12 @@ header .container span {
 }
 .myProject .container .projects .cards {
   display: flex;
+  margin-top: 10px;
 }
 .myProject .container .projects .cards .project {
   margin: 0 3em 0 0;
 }
+
 nav {
   position: absolute;
   top: -1px;
@@ -240,6 +253,12 @@ nav .linksBox .submit {
   height: 40px;
   border-radius: 0 0 16px 16px;
   border: 1px solid var(--prime-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav .linksBox .submit:hover {
+  background-color: var(--prime-color);
+  color: var(--white-color);
 }
 nav .linksBox .iconsLinks {
   margin: 10px 0 0 0;
@@ -256,10 +275,18 @@ nav .linksBox .iconsLinks ul li {
 nav .linksBox .iconsLinks ul li a {
   font-size: 35px;
   color: var(--prime-color);
+  transition: 0.3s;
+}
+nav .linksBox .iconsLinks ul li:hover a {
+  color: var(--gray-color);
 }
 @media (max-width: 450px) {
   .myProject .container {
     padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .myProject .container .projects h1 {
     text-align: center;
@@ -276,7 +303,7 @@ nav .linksBox .iconsLinks ul li a {
     text-align: center;
   }
   nav {
-    position: relative;
+    position: initial;
     border: none;
   }
   nav .title {
