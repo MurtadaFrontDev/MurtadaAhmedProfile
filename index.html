@@ -59,31 +59,31 @@
         <h1><span>My</span> Project.</h1>
         <div class="cards formValidation">
           <div class="project">
-            <div class="img">
+            <div class="img" onclick="showAlert()">
               <img src="images/Form Va.png" alt="Form Validation">
             </div>
             <h2>Form Validation.</h2>
             <p>An advanced login form that checks for password and replay if it meets certain conditions.</p>
-            <a href="#">See More...</a>
+            <a onclick="showAlert()" id="seeMore" href="#">See More...</a>
           </div>
           <div class="project normalLoginPage">
-            <div class="img">
+            <div class="img" onclick="showAlert()">
               <img
                 src="images/screencapture-file-E-Projects-My-Last-Project-Login-Page-HCJ-CSA-index-html-2023-01-17-02_51_10.png"
                 alt="normalLoginPage">
             </div>
             <h2>Login Page.</h2>
             <p>Log out page, you can change its colors from the side menu.</p>
-            <a href="#">See More...</a>
+            <a onclick="showAlert()" id="seeMore" href="#">See More...</a>
           </div>
           <div class="project">
-            <div class="img">
+            <div class="img" onclick="showAlert()">
               <img src="images/screencapture-file-E-Projects-Template-One-index-html-2023-01-17-02_54_37.png"
                 alt="Leno">
             </div>
             <h2>Leno.</h2>
             <p>leno is the first website I've ever worked on.</p>
-            <a href="#">See More...</a>
+            <a onclick="showAlert()" id="seeMore" href="#">See More...</a>
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@
             <a href="#">murtada.ah2006@gmail.com</a>
             <a href="#">+9647713897889</a>
           </div>
-          <form onsubmit="sendEmail(); reset(); return false;">
+          <form onsubmit=" showAlert();return false;">
             <div class="input name">
               <label for="name">Name</label>
               <input type="text" name="name" id="name">
@@ -109,24 +109,24 @@
               <label for="subject">Name</label>
               <textarea name="subject" id="subject"></textarea>
             </div>
-            <input class="submit" type="submit" value="Submit">
+            <button id="submit" class="submit">Submit</button>
           </form>
           <div class="iconsLinks">
             <ul>
               <li>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/MurtadaFrontDev"><i class="fa-brands fa-github"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/murtadafrontdev/"><i class="fa-brands fa-linkedin"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://discord.gg/s9kJqpX7sY"><i class="fa-brands fa-discord"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/murtada_ah1/"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://twitter.com/q0m5_"><i class="fa-brands fa-twitter"></i></a>
               </li>
             </ul>
           </div>
@@ -143,14 +143,17 @@
     </div>
   </Footer>
   <!-- End Footer -->
-  <SCript src="https://smtpjs.com/v3/smtp.js"></SCript>
-  <SCript>
-    function sendEmail() {
-      function sendEmail() {
-        window.alert("Soon....")
-      }
-    }
-  </SCript>
+  <!-- Start Alert Box -->
+  <section id="alertBox" class="alertBox">
+    <div class="alert">
+      <div class="container">
+        <h1>Sorry We Working In This Section</h1>
+      </div>
+    </div>
+  </section>
+  <!-- End Alert Box -->
+  <script src="javascript/main.js"></script>
+
 </body>
 
 </html>
